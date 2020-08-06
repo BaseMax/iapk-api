@@ -40,7 +40,7 @@ Flight::route('/(@lang)', function($lang){
 Flight::route('/@lang/search/@query/', function($lang, $query){
   global $db;
   global $appModalFields;
-  $data["applications"]=$db->selectsRaw("select ".$appModalFields." from `iapk_site`.`application` WHERE 
+  $data["applications"]=$db->selectsRaw("select ".$appModalFields." from `android_apk_site`.`application` WHERE 
   `lang` = '".$lang."' AND
   (
   `title` LIKE '%".$query."%' OR
