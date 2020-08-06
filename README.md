@@ -7,7 +7,7 @@ Web service source code for [iapk.org](https://iapk.org/) website with Flight mi
 ## Structure
 
 Example:
-- `/`
+- `/` (default language is **EN**)
 - `/en/`, `/pt/`, `/fr/`
 - `/de/search/github/`, `/pt/search/firefox/`
 - `/ar/tools/`
