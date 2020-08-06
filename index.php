@@ -140,6 +140,9 @@ Flight::route('/@lang/download/@applicationSlug', function($lang, $applicationSl
       ]);
       exit();
     }
+    $file_url="NOT PUBLIC";
+    // $file_url=$addresses[0] . 'apks/' . $name . '.apk';
+    $data["download_link"]=$file_url;
   }
   Flight::json([
     'status'=>'success',
