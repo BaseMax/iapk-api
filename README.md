@@ -7,11 +7,11 @@ Web service source code for [iapk.org](https://iapk.org/) website with Flight mi
 ## Structure
 
 ```php
-Flight::route('/(@lang)', function($lang);
-Flight::route('/@lang/search/@query/', function($lang, $query);
-Flight::route('/@lang/@categorySlug/', function($lang, $categorySlug);
-Flight::route('/@lang/download/@applicationSlug', function($lang, $applicationSlug);
-Flight::route('/@lang/@categorySlug/@applicationSlug', function($lang, $categorySlug, $applicationSlug);
+Flight::route('/(@lang)', function($lang) {}
+Flight::route('/@lang/search/@query/', function($lang, $query) {}
+Flight::route('/@lang/@categorySlug/', function($lang, $categorySlug) {}
+Flight::route('/@lang/download/@applicationSlug', function($lang, $applicationSlug) {}
+Flight::route('/@lang/@categorySlug/@applicationSlug', function($lang, $categorySlug, $applicationSlug) {}
 ```
 
 ## Config for Nginx
