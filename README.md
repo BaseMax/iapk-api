@@ -6,6 +6,15 @@ Web service source code for [iapk.org](https://iapk.org/) website with Flight mi
 
 ## Structure
 
+Example:
+- `/`
+- `/en/`, `/pt/`, `/fr/`
+- `/de/search/github/`, `/pt/search/firefox/`
+- `/ar/tools/`
+- `/fr/download/com.github.test/`, `/pt/download/PACKAGE_NAME_OF_APP/`
+- `/pt/tools/com.github.test/`
+
+So: 
 ```php
 Flight::route('/(@lang)', function($lang) {}
 Flight::route('/@lang/search/@query/', function($lang, $query) {}
