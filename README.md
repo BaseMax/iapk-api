@@ -14,6 +14,29 @@ Flight::route('/@lang/download/@applicationSlug', function($lang, $applicationSl
 Flight::route('/@lang/@categorySlug/@applicationSlug', function($lang, $categorySlug, $applicationSlug);
 ```
 
+## Config for Nginx
+
+```
+server {
+  #port
+  listen 80;
+  #domain
+  server_name webservice-testing.iapk.org;
+  root   /home/android-iapk-site/root/subdomain-api/;
+  index index.php;
+  location / {
+    try_files $uri $uri/ /index.php;
+  }
+  location ~ \.php$ {
+    fastcgi_pass   127.0.0.1:9000;
+    fastcgi_index  index.php;
+    fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+    include        fastcgi_params;
+  }
+}
+
+```
+
 ### What's Flight?
 
 #### An extensible micro-framework for PHPflightphp.com
