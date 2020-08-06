@@ -1,4 +1,10 @@
 <?php
+/*
+ * @Name: iapk-api
+ * @Author: Max Base
+ * @Repository: https://github.com/BaseMax/iapk-api
+ * @Date: 2020-08-03, 2020-08-07
+ */
 require 'flight/Flight.php';
 require 'phpedb.php';
 require 'netphp.php';
