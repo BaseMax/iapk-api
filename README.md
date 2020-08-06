@@ -4,6 +4,12 @@
 
 Web service source code for [iapk.org](https://iapk.org/) website with Flight micro-framework for PHP. 
 
+### Why this project is useful?
+
+> The flight micro-framework is really cool.
+
+All routes and web services are in one single PHP file and tiny and shortcode. Clean...
+
 ## Structure
 
 Example:
