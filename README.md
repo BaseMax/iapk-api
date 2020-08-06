@@ -2,6 +2,16 @@
 
 Web service source code for iapk.org website with Flight micro-framework for PHP. 
 
+## Structure
+
+```php
+Flight::route('/(@lang)', function($lang);
+Flight::route('/@lang/search/@query/', function($lang, $query);
+Flight::route('/@lang/@categorySlug/', function($lang, $categorySlug);
+Flight::route('/@lang/download/@applicationSlug', function($lang, $applicationSlug);
+Flight::route('/@lang/@categorySlug/@applicationSlug', function($lang, $categorySlug, $applicationSlug);
+```
+
 ### What's Flight?
 
 #### An extensible micro-framework for PHPflightphp.com
