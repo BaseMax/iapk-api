@@ -29,7 +29,13 @@ Flight::route('/@lang/download/@applicationSlug', function($lang, $applicationSl
 Flight::route('/@lang/@categorySlug/@applicationSlug', function($lang, $categorySlug, $applicationSlug) {}
 ```
 
-## Config for Nginx
+### Dependencies
+
+- PHPEDB: https://github.com/BaseMax/PHPEDB
+- NetPHP: https://github.com/BaseMax/NetPHP
+- Flight: https://flightphp.com/
+
+## Config PHP-Flight for Nginx
 
 ```
 server {
